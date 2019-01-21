@@ -1,0 +1,46 @@
+GIT Essential Training - my remarks
+-----------------------------------
+
+
+Initial setup and configuration:
+********************************
+which git
+git version
+git config --list
+git config --global user.name "Peter Nemcek"
+git config --global user.email "peter.nemcek@icloud.com"
+git config --global core.editor 'vi'
+cat .gitconfig
+
+download : curl -OL https://github.com/git/git/raw/master/contrib/completion/git-completion.bash
+rename: mv git-completion.bash .git-completion.bash
+add to .bash_profile:
+						if [ -f ~/.git-completion.bash ]; then
+  							source ~/.git-completion.bash
+						fi
+
+
+Git initiation
+**************
+git init  (inside project folder initiate repository with this comand)
+
+create a new file within the repo folder
+
+then
+
+git add .
+or
+git add [filename]
+git commit -m "message"
+
+
+
+
+
+
+
+
+
+
+
+
