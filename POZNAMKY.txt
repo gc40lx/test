@@ -62,6 +62,8 @@ git checkout <previous_hash_value> -- <filename>		# reverts the <filename> to pr
 git revert <last_hash>					# will do the exactly opposite commit as in the <last_hash>
 
 
+XXXXX
+
 
 
 
