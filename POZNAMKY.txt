@@ -20,19 +20,46 @@ add to .bash_profile:
 						fi
 
 
-Git initiation
-**************
+Git initiation and changing files
+*********************************
 git init  (inside project folder initiate repository with this comand)
 
 create a new file within the repo folder
 then
 
-git add .
+git add .								# add all files for staging
 or
-git add [filename]
-git commit -m "message"
+git add [filename]						# ads just the <filename> for staging
+git commit -m "message"					# commit the stage index to repository
 
+git commit -am "message"				# makes git add + git commit together
+git commit --amend -m "message to the last commit" # adds commit to the same last commit
 
+git log
+git log -n 5
+git log --since=2019-01-15
+git log --until=2019-01-15
+git log --author="Peter Nemcek"
+git log --grep="string..."
+
+git status
+
+git reset HEAD <file>       			# to unstage file before commit
+
+git diff								# differencies in the working directory
+git diff <filename>
+git diff --color-worlds <filename>
+
+git diff --staged						# differencies in the staging index/directory
+
+git rm <filename>						# delete the <filename>. Also can be done on the system level
+git commit -m "file deleted"
+
+git mv <from_filename> <to_filename>	# rename with git the filename <from_filename> <to_filename>  Also could be done on the system level
+
+git checkout <previous_hash_value> -- <filename>		# reverts the <filename> to previous version
+
+git revert <last_hash>					# will do the exactly opposite commit as in the <last_hash>
 
 
 
