@@ -25,7 +25,6 @@ Git initiation
 git init  (inside project folder initiate repository with this comand)
 
 create a new file within the repo folder
-
 then
 
 git add .
