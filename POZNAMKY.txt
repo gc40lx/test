@@ -102,6 +102,6 @@ git remote 										# show the known remotes
 git remote -v 									# show the remote link for fetch and push
 git remote add <alias> <url>					# add the remote repo 
 git remote rm <branch>							# remove the remote branch
-git push -u <git_hub_remote>					# push it up to remote and keep the track
+git push -u <git_hub_remote>					# push it up to remote and keep set the tracking
 git clone <url> 								# clone the remote branch and setup also the tracking
-
+...
