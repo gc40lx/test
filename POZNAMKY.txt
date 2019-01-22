@@ -105,4 +105,45 @@ git remote add <alias> <url>					# add the remote repo
 git remote rm <branch>							# remove the remote branch
 git push -u <git_hub_remote>					# push it up to remote and keep set the tracking
 git clone <url> 								# clone the remote branch and setup also the tracking
-...
+
+
+Collaboration workflow
+**********************
+git checkout master 							# these steps are performed by cooworker1
+git fetch
+git merge origin/master
+git checkout -b <new_branch>
+git add <new_stuff>
+git commit -m "message"
+git fetch
+git push -u origin <new_branch>
+
+git checkout master 							# these steps are performed by cooworker2
+git fetch
+git merge origin/master
+git checkout -b <new_branch> origin/<new_branch>
+git log
+git show <hash>
+....here are made some additional changes
+git commit -am "description"
+git fetch
+gil push
+
+git fetch  										# these steps are performed by cooworker1
+git log -p <new_branch>..origin/<new_branch>
+...review the changes
+git merge origin/<new_branch>
+git checkout master
+git fetch
+git merge origin/master
+git merge <new_branch>
+git push
+
+
+
+
+
+
+
+
+
