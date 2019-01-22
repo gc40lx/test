@@ -51,6 +51,7 @@ git status 										# display actual status
 git reset HEAD <file>       					# to unstage file before commit
 git diff										# differencies in the working directory
 git diff <filename>
+git diff naster..origin/master					# shows the diff between master and remote origin/master !!!!!
 git diff --color-worlds <filename>
 git diff --staged								# differencies in the staging index/directory
 git rm <filename>								# delete the <filename>. Also can be done on the system level
